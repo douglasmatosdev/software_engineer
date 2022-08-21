@@ -15,7 +15,12 @@ public class Main {
             dividendo = sc.nextInt();
             System.out.println("Entre com o divisor.");
             divisor = sc.nextInt();
-            quociente = dividendo / divisor;
+            try {
+                quociente = dividendo / divisor;
+            }
+            catch (Exception e){
+                System.out.println("ERRO: Divisão por zero!");
+            }
             System.out.println("O quociente é: " + quociente);
             System.out.println("Repetir?(s/n)");
             control = sc.next().toString();
