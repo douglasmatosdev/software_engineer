@@ -1,0 +1,39 @@
+#!/bin/bash
+
+A="Linux"
+B="Linux"
+C=
+D="Any"
+
+echo "if [[ "$A" = "$B" ]]"
+if [[ "$A" = "$B" ]]
+then
+    echo "A = B"
+fi
+echo
+
+echo "if [[ "$A" != "$C" ]]"
+if [[ "$A" != "$C" ]]
+then
+    echo "A != C"
+fi
+echo
+
+
+echo "if [[ -z "$C" ]]"
+if [[ -z"$C" ]]
+then
+    echo "C zero caracteres"
+fi
+echo
+
+echo "if [[ -n "$B" ]]"
+if [[ -n"$B" ]]
+then
+    echo "B possui mais do que zero caracteres"
+fi
+echo
+
+echo
+
+exit 1

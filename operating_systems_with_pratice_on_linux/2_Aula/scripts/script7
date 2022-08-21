@@ -1,0 +1,31 @@
+#!/bin/bash
+
+segundos=1
+
+funcao1 ()
+{
+    echo "Estamos na funcao 1."
+}
+
+funcao2 ()
+{
+    i=0
+    repetir=5
+    
+    echo
+    echo "Estamos na funcao 2."
+    echo
+    
+    sleep $segundos
+    while [ $i -lt $repetir ]
+    do
+        echo "Estamos dentro do loop $i na funcao 2"
+        echo
+        let "i+=1"
+    done
+}
+
+funcao1
+funcao2
+
+exit $?

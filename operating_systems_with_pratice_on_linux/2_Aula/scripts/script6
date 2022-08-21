@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in 1, 2
+do
+    gnome-terminal -e "bash -c 'echo hello world; sleep 120'" &
+    #gnome-terminal -e execute o argumento para esta opção dentro do terminal.
+    #bash -c comandos são lidos da string.
+done
