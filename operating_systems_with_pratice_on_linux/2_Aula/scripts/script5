@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Sinal de = como operador de teste
+# O Bash não separa suas variáveis po "tipo"
+# Essencialmente as variáveis são strings mas dependendo do contexto 
+# o Bash permite operações aritiméticas e comparações de variáveis
+
+var1=4
+var2=4
+
+if ["$var1" = "$var2"]
+    then
+        echo 'ok'
+    else
+        echo 'nao eh igual'
+    fi
+
+var1=$var1+3
+echo $var1
+
+let "var2$var2+3"
+echo $var2
+
+var2=`expr $var2 + 3`
+echo $var2

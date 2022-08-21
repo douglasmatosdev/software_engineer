@@ -1,0 +1,6 @@
+#!/bin/bash
+
+variavel1=23
+
+echo variavel1
+echo $variavel1

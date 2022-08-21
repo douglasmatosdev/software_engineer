@@ -1,0 +1,60 @@
+#!/bin/bash
+
+A=1
+B=1
+
+# Igualdade (-eq -> is equal)
+echo "# Igualdade (-eq -> is equal)"
+if [[ "$A" -eq "$B" ]]
+then
+    echo "A=$A == B=$B"
+fi
+echo
+A=5
+
+# Diferente (-ne -> is not equal)
+echo "# Diferente (-ne -> is not equal)"
+if [[ "$A" -ne "$B" ]]
+then
+    echo "A=$A != B=$B"
+fi
+echo
+
+# Maior que (-gt -> is greater than)
+echo "# Maior que (-gt -> is greater than)"
+if [[ "$A" -gt "$B" ]]
+then
+    echo "A=$A > B=$B"
+fi
+echo
+
+A=8
+B=8
+
+# Maior ou igual (-ge -> is greater than or equal)
+echo "# Maior ou igual (-ge -> is greater than or equal)"
+if [[ "$A" -ge "$B" ]]
+then
+    echo "A=$A >= B=$B"
+fi
+echo
+
+A=7
+
+# Menor que (-lt -> less than)
+echo "# Menor que (-lt -> less than)"
+if [[ "$A" -lt "$B" ]]
+then
+    echo "A=$A < B=$B"
+fi
+echo
+
+# Menor ou igual (-le -> is less than or equal)
+echo "# Menor ou igual (-le -> is less than or equal)"
+if [[ "$A" -le "$B" ]]
+then
+    echo "A=$A <= B=$B" 
+fi
+echo
+
+exit 1
