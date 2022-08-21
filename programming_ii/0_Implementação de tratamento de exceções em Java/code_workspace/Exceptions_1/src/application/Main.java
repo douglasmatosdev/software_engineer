@@ -16,10 +16,12 @@ public class Main {
             System.out.println("Entre com o divisor.");
             divisor = sc.nextInt();
             try {
+                if (divisor == 0) {
+                    throw new ArithmeticException("Divisor nulo");
+                }
                 quociente = dividendo / divisor;
-            }
-            catch (Exception e){
-                System.out.println("ERRO: Divisão por zero!");
+            } catch (Exception e) {
+                System.out.println("ERRO: Divisão por zero!" + e.getMessage());
             }
             System.out.println("O quociente é: " + quociente);
             System.out.println("Repetir?(s/n)");
