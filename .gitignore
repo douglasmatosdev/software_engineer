@@ -1,3 +1,21 @@
+# NetBeans specific #
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# Class Files #
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/c,sbt,git,vim,c++,java,node,swift,scala,linux,emacs,python,haskell,sublimetext,coffeescript,intellij+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=c,sbt,git,vim,c++,java,node,swift,scala,linux,emacs,python,haskell,sublimetext,coffeescript,intellij+all
 
@@ -746,3 +764,6 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/c,sbt,git,vim,c++,java,node,swift,scala,linux,emacs,python,haskell,sublimetext,coffeescript,intellij+all
+/programming_ii/3_Interfaces Gráficas em Java/code_workspace/Test1/nbproject/private/
+/programming_ii/3_Interfaces Gráficas em Java/code_workspace/Swing1/nbproject/private/
+/programming_ii/3_Interfaces Gráficas em Java/code_workspace/Swing2/nbproject/private/
