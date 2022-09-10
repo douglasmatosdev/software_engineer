@@ -1,0 +1,40 @@
+group: Tabela Empregados
+
+Empregado = {
+    ID:number,Nome:string,Cargo:string,Salario:number,Id_Depto:number
+    101,"Carlos Antunes","Gerente de Vendas", 5000.00,10
+    102,"Pedro Leitão","Vendedor",1100.00,10
+    103,"Antônio Ventura","Almoxarife",1200.00,20
+    104,"Marco Aurélio","Vendedor",1500.00,10
+    105,"Carla da Silva","Secretária",1000.00,30
+    106,"Ivo Pereira","Contador",2000.00,40
+}
+
+π Nome,Salario (σ Salario > 2000.00(Empregado))
+
+
+Este não consegui fazer funcionar
+π Salario > 2000.00 (σ Nome,Salario (Empregado))
+
+
+group: Estudos
+
+Departamento = {
+    ID:number,Nome:string,ID_REGIAO:number
+    10,"VENDAS",1
+    20,"OPERAÇÕES",1
+    30,"ADMINISTRATIVO",2
+    40,"FINANCEIRO",3
+}
+
+
+Regiao = {
+    ID:number,Nome:string
+    1,"NORTE"
+    2,"CENTRO"
+    3,"SUL"
+}
+
+π DEPARTAMENTO.Nome,REGIAO.Nome (DEPARTAMENTO ⨯ REGIAO)
+
+π DEPARTAMENTO.Nome,REGIAO.Nome (σ ID_REGIAO= REGIAO.ID (DEPARTAMENTO ⨯ REGIAO))
