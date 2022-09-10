@@ -19,4 +19,6 @@ gcc -g -o application obj/main.o obj/biblioteca.o && \
 ## Fourth Semester
 
 - ### [Programming II](https://github.com/douglasmatosdev/software_engineer/tree/main/programming_ii)
+- ### [Systems Architecture](https://github.com/douglasmatosdev/software_engineer/tree/main/systems_architecture)
+- ### [Database Implementation](https://github.com/douglasmatosdev/software_engineer/tree/main/database_implementation)
 
