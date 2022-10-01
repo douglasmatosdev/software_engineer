@@ -22,3 +22,4 @@ gcc -g -o application obj/main.o obj/biblioteca.o && \
 - ### [Systems Architecture](https://github.com/douglasmatosdev/software_engineer/tree/main/systems_architecture)
 - ### [Database Implementation](https://github.com/douglasmatosdev/software_engineer/tree/main/database_implementation)
 
+- ### [Differential and Itegral Calculus](https://github.com/douglasmatosdev/software_engineer/tree/main/differential_and_integral_calculus)
