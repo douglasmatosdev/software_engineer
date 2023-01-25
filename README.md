@@ -1,4 +1,4 @@
-# software_engineer and Computer Science
+# Software Engineer and Computer Science
 
 ## Third Semester
 
