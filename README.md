@@ -1,5 +1,21 @@
 # Software Engineer and Computer Science
 
+## First Semester
+
+- ### [Computer networking fundamentals]()
+- ### [Fundamentals of information systems]()
+- ### [Computer organization and architecture]()
+- ### [Career planning and professional success]()
+- ### [Software development processes]()
+
+## Second semester
+
+- ### [Web development in HTML5, CSS, JavaScript and PHP]()
+- ### [Information Security Management]()
+- ### [Tecnologic Innovation]()
+- ### [Introduction to Programming]()
+- ### [Computational Mathematics]()
+
 ## Third Semester
 
 - ### [Programming I](https://github.com/douglasmatosdev/software_engineer/tree/main/third_semester/programming_i)
