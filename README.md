@@ -33,3 +33,11 @@
 - ### [Differential and Itegral Calculus](https://github.com/douglasmatosdev/software_engineer/tree/main/fourth_semester/differential_and_integral_calculus)
 
 - ### [System Modeling with UML](https://github.com/douglasmatosdev/software_engineer/tree/main/fourth_semester/system_modeling_with_uml)
+
+## Fifth Semester
+
+- ### [Algorithms and Complexity]()
+- ### [Projetct Management]()
+- ### [I.T. Performance Indicators ]()
+- ### [Software Design Patterns with Java]()
+- ### [Probability and Statistics]()
