@@ -1,4 +1,4 @@
-package org.example.utils;
+package douglasmatosdev.college.utils;
 
 import java.util.*;
 

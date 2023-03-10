@@ -1,4 +1,4 @@
-package org.example.entities;
+package douglasmatosdev.college.entities;
 
 public class Produto {
     private String nome;

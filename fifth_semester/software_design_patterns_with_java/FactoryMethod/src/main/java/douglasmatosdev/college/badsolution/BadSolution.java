@@ -1,9 +1,9 @@
-package org.example.badsolution;
+package douglasmatosdev.college.badsolution;
 
-import org.example.entities.ItemPedido;
-import org.example.entities.Produto;
-import org.example.utils.ArrayIterator;
-import org.example.utils.HashSetIterator;
+import douglasmatosdev.college.entities.ItemPedido;
+import douglasmatosdev.college.entities.Produto;
+import douglasmatosdev.college.utils.ArrayIterator;
+import douglasmatosdev.college.utils.HashSetIterator;
 
 import java.util.ArrayList;
 import java.util.Arrays;

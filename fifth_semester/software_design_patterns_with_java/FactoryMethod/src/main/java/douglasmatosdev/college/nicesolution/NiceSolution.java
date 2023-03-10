@@ -1,7 +1,7 @@
-package org.example.nicesolution;
+package douglasmatosdev.college.nicesolution;
 
-import org.example.entities.ItemPedido;
-import org.example.entities.Produto;
+import douglasmatosdev.college.entities.ItemPedido;
+import douglasmatosdev.college.entities.Produto;
 
 import java.util.Arrays;
 import java.util.Collection;
