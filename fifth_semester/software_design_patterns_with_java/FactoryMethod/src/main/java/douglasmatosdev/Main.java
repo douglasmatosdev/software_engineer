@@ -1,8 +1,8 @@
-package org.example;
+package douglasmatosdev.college;
 
-import org.example.badsolution.BadSolution;
-import org.example.badsolutiontoo.BadSolutionToo;
-import org.example.nicesolution.NiceSolution;
+import douglasmatosdev.college.badsolution.BadSolution;
+import douglasmatosdev.college.badsolutiontoo.BadSolutionToo;
+import douglasmatosdev.college.nicesolution.NiceSolution;
 
 /**
  * Author: Douglas Matos da Silva
