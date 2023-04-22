@@ -36,8 +36,8 @@
 
 ## Fifth Semester
 
-- ### [Algorithms and Complexity]()
+- ### [Algorithms and Complexity](https://github.com/douglasmatosdev/software_engineer/tree/main/fifth_semester/algorithms_and_complexity)
 - ### [Projetct Management]()
 - ### [I.T. Performance Indicators ]()
-- ### [Software Design Patterns with Java]()
-- ### [Probability and Statistics]()
+- ### [Software Design Patterns with Java](https://github.com/douglasmatosdev/software_engineer/tree/main/fifth_semester/software_design_patterns_with_java)
+- ### [Probability and Statistics](https://github.com/douglasmatosdev/software_engineer/tree/main/fifth_semester/probability_and_statistics)
