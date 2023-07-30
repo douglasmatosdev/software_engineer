@@ -41,3 +41,8 @@
 - ### [I.T. Performance Indicators ]()
 - ### [Software Design Patterns with Java](https://github.com/douglasmatosdev/software_engineer/tree/main/fifth_semester/software_design_patterns_with_java)
 - ### [Probability and Statistics](https://github.com/douglasmatosdev/software_engineer/tree/main/fifth_semester/probability_and_statistics)
+
+
+## Sixth Semester
+
+- ### [Web Development in MVC Architecture](https://github.com/douglasmatosdev/software_engineer/tree/main/sixth_semester/)
