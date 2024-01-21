@@ -46,3 +46,8 @@
 ## Sixth Semester
 
 - ### [Web Development in MVC Architecture](https://github.com/douglasmatosdev/software_engineer/tree/main/sixth_semester/)
+
+
+## Seventh Semester
+
+- ### [Programming for Mobile Devices on Android](https://github.com/douglasmatosdev/software_engineer/tree/main/seventh_semester/)
