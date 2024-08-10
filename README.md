@@ -51,3 +51,7 @@
 ## Seventh Semester
 
 - ### [Programming for Mobile Devices on Android](https://github.com/douglasmatosdev/software_engineer/tree/main/seventh_semester/)
+
+## Eighth Semester
+
+- ### [Big Data topics in Python](https://github.com/douglasmatosdev/software_engineer/tree/main/eighth_semester/)
