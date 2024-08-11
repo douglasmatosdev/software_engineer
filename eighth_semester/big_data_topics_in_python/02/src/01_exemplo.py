@@ -10,10 +10,10 @@ paralelo = spark_contexto.parallelize(vetor)
 
 print(paralelo)
 
-mapa = paralelo.map(lambda x : x**2+x) # f(x) = x² + x
+mapa = paralelo.map(lambda x: x**2 + x)  # f(x) = x² + x
 
-print(mapa.collect()) # [110, 420, 930, 1640, 2550]
+print(mapa.collect())  # [110, 420, 930, 1640, 2550]
 
 somatorio = mapa.reduce(add)
 
-print(somatorio) # 5650
+print(somatorio)  # 5650

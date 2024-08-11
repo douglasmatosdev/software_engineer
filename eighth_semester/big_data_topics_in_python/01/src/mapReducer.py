@@ -3,6 +3,7 @@ import re
 
 palavra_regex = re.compile(r"[\w']+")
 
+
 class QuantidadePalavras(MRJob):
     def mapper(self, _, linha):
         for p in palavra_regex.findall(linha):
@@ -12,6 +13,5 @@ class QuantidadePalavras(MRJob):
         yield (p, sum(qtd))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     QuantidadePalavras.run()
- 
