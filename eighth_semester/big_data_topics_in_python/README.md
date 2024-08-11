@@ -7,3 +7,5 @@ https://www.kaggle.com/
 - numpy
 - operator
 - pandas
+- sklearn
+- plotly
