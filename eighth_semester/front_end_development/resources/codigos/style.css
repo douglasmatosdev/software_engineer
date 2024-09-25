@@ -1,0 +1,29 @@
+*, html, body, li, a, div {
+    box-sizing: border-box;
+}
+ul {
+    width: 500px;
+    margin: 0 auto;
+}
+li {
+    margin-bottom: 24px;
+    display: flex;
+}
+li a {
+    text-align: center;
+    flex: 1;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 4px 8px;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+}
+
+li a:hover {
+    display: inline-block;
+    background: #fff;
+    color: blue;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
