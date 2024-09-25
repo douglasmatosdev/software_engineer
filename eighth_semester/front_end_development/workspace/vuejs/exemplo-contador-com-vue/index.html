@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo contador com Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <h1>Contador: {{ contador }}</h1>
+        <button @click="contador--"> - 1</button>
+        <button @click="contador++"> + 1</button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
