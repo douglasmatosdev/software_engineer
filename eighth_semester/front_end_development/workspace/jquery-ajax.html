@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+</body>
+
+<script type="text/javascript">
+
+// Usando Javascript puro
+    var xhttp = new XMLHttpRequest()
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log('XMLHttpRequest', this.responseText)
+        }
+    }
+    xhttp.open('GET', '../resources/codigos/codigo33-json_data.json', true)
+    xhttp.send()
+
+
+    // Usando Ajax com jQuery
+    $.ajax({
+        url: '../resources/codigos/codigo33-json_data.json',
+        type: 'get',
+        beforeSend: function () {
+            console.log('Requisição em andamento...')
+        }
+    })
+        .done(function (msg) {
+            console.log('done', msg)
+        })
+        .fail(function (jqXHR, textStatus, msg) {
+            console.log('fail', msg)
+        })
+</script>
+
+</html>
