@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Requisições AJAX com jQuery e recusros remotos</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.js"></script>
+</head>
+
+<body>
+
+    <form>
+        <input type="text" id="cep" />
+        <input type="button" id="btn" value="Pesquisar">
+    </form>
+
+    <div id="result"></div>
+
+</body>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btn").on('click', function () {
+            var cep = $("#cep").val();
+            if (cep.length === 0) {
+                alert('Preencha o campo CEP');
+                return;
+            }
+            $.ajax({
+                url: `https://viacep.com.br/ws/${cep}/json/`,
+                type: 'GET',
+                // success: function (data) {
+                //     console.log(data);
+                // }
+            }).done(function (data) {
+                console.log(data);
+                $("#result").append(`CEP: ${data.cep} <br /> Logradouro: ${data.logradouro} <br /> Bairro: ${data.bairro} <br /> Localidade: ${data.localidade} <br /> UF: ${data.uf}`);
+            }).fail(function (xhr, textStatus, msg) {
+                console.log('Erro na requisição', msg);
+            });
+        });
+    })
+</script>
+
+</html>
