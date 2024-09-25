@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <style>
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            flex: 1;
+            cursor: pointer;
+            height: 16px;
+            margin-bottom: 4px;
+            padding: 2px 4px;
+            max-width: 200px;
+        }
+
+        li:hover {
+            border: 1px solid #666;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <script type="text/javascript">
+        // .click funciona apenas para elementos que já existem no DOM
+        $('ul li').click(function () {
+            console.log('Conteúdo do item da lista: ' + $(this).text());
+            if ($(this).text().includes('Clicado')) {
+                $(this).text($(this).text().replace(' - Clicado', ''));
+                return;
+            }
+            $(this).append(' - Clicado');
+        });
+        //Adicionando, dinamicamente, um novo elemento <li> à lista
+        $('ul').append('<li>Item 6</li>');
+
+        // .on funciona para elementos que ainda não existem no DOM
+        $('ul li').on('click', function () {
+            console.log('Conteúdo do item da lista: ' + $(this).text());
+            if ($(this).text().includes('Clicado')) {
+                $(this).text($(this).text().replace(' - Clicado', ''));
+                return;
+            }
+            $(this).append(' - Clicado');
+        });
+    </script>
+</body>
+
+</html>
