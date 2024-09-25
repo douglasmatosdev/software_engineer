@@ -54,4 +54,6 @@
 
 ## Eighth Semester
 
-- ### [Big Data topics in Python](https://github.com/douglasmatosdev/software_engineer/tree/main/eighth_semester/)
+- ### [Big Data topics in Python](https://github.com/douglasmatosdev/software_engineer/tree/main/eighth_semester/big_data_topics_in_python)
+
+- ### [Front-end Development](https://github.com/douglasmatosdev/software_engineer/tree/main/eighth_semester/front_end_development)
