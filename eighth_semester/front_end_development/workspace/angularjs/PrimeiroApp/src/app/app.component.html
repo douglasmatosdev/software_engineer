@@ -1,0 +1,11 @@
+<div>
+  <div id="principal">
+    <h1>{{ title }}</h1>
+  </div>
+  <table class="table table-dark bg-dark">
+    <tr *ngFor="let d of dados">
+      <td>{{ d.nome }}</td>
+      <td>{{ d.email }}</td>
+    </tr>
+  </table>
+</div>
