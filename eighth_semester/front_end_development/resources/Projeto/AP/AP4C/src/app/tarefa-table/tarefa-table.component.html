@@ -1,0 +1,12 @@
+<table>
+    <tr>
+      <th>Titulo</th><th>Descricao</th><th>Efetuada</th>
+      <th>Remover</th>
+    </tr>
+    <tr *ngFor="let t of tarefas">
+      <td>{{t.titulo}}</td><td>{{t.descricao}}</td>
+      <td class="oper"> <input type="checkbox" [checked]="t.completa"
+           (change)="alternar(t._id)"></td>
+      <td class="oper"><button (click)="remover(t._id)">X</button></td>
+    </tr>
+</table>

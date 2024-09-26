@@ -1,0 +1,16 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+#conteudo{
+    display:flex;
+    flex-wrap: wrap;
+    width:80%; 
+    float:left;
+    justify-content: center;
+    align-items: center;
+}
+
+label, button{
+    margin:5px;
+    width: 100px;
+    display: inline-block;
+}

@@ -1,0 +1,16 @@
+<main id="conteudo">
+    <div style="width:100%; margin:10px;">
+        <h2 style="display:inline;">Novo Produto</h2>
+        <hr />
+        <form (submit)="incluir()">
+            <label for="codigo">Código:</label>
+            <input type="text" name="codigo" [(ngModel)]="produto.codigo"><br/>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" [(ngModel)]="produto.nome"><br/>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" name="quantidade" [(ngModel)]="produto.quantidade"><br/>
+            <button type="submit" [disabled]="enviando">Incluir</button>
+        </form>
+    </div>
+</main>
+<app-lateral pagina="Novo Produto"></app-lateral>

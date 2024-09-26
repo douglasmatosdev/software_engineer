@@ -1,0 +1,35 @@
+<form [formGroup]="formUsu" (ngSubmit)="addUsu()">
+<h2 mat-dialog-title>Cadastro de Usuário</h2>
+<mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Nome</mat-label>
+            <input matInput type="text" formControlName="nome">
+            <mat-error *ngIf="formUsu.get('nome')?.errors">
+                {{getError("nome")}}</mat-error>
+    </mat-form-field><br/>    
+    <mat-form-field appearance="fill">
+        <mat-label>E-mail</mat-label>
+            <input matInput type="email" formControlName="email">
+            <mat-error *ngIf="formUsu.get('email')?.errors">
+                {{getError("email")}}</mat-error>
+    </mat-form-field><br/>
+    <mat-form-field appearance="fill">
+        <mat-label>Login</mat-label>
+            <input matInput type="text" formControlName="login">
+            <mat-error *ngIf="formUsu.get('login')?.errors">
+                {{getError("login")}}</mat-error>
+    </mat-form-field><br/>
+    <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+            <input matInput type="password" formControlName="senha">
+            <mat-error *ngIf="formUsu.get('senha')?.errors">
+                {{getError("senha")}}</mat-error>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button matDialogClose="cancelou">Cancelar</button>
+    <button mat-button color="primary" type="submit"
+            matDialogClose="cadastrou" 
+            [disabled]="!formUsu.valid">Confirmar</button>
+</mat-dialog-actions>
+</form>

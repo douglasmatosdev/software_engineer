@@ -1,0 +1,19 @@
+form{
+    width: auto; background: lightblue; padding: 10px;
+}
+label, button{
+    margin:5px; width: 100px; display: inline-block;
+}
+table {
+    width: 100%;
+}
+td,th {
+    border-left: 1px solid black; padding: 5px;
+}
+th {
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background: lightgray
+}
+ 

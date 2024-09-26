@@ -1,0 +1,6 @@
+form{
+    width: auto; background: lightblue; padding: 10px;
+}
+label, button{
+    margin:5px; width: 100px; display: inline-block;
+}

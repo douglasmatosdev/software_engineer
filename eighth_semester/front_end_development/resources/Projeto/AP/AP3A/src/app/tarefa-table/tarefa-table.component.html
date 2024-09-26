@@ -1,0 +1,10 @@
+<table>
+    <tr>
+      <th>Titulo</th><th>Descricao</th><th>Efetuada</th>
+    </tr>
+    <tr *ngFor="let t of tarefas; let i = index;">
+      <td>{{t.titulo}}</td><td>{{t.descricao}}</td>
+      <td><input type="checkbox" [checked]="t.completa"
+           (change)="alternar(i)"></td>
+    </tr>
+</table>

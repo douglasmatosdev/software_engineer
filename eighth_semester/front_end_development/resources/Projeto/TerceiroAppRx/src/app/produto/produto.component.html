@@ -1,0 +1,16 @@
+<main id="conteudo">
+    <div style="width:100%; margin:10px;">
+        <h2 style="display:inline;">Listagem de Produtos</h2>
+        <button style="float:right"
+                (click)="incluir()">Novo Produto</button>
+        <hr />
+    </div>
+    <div class="container">
+        <div class="pnlProduto" *ngFor="let produto of produtos">
+        {{produto.codigo}}<br/>
+        {{produto.nome}}<br/>
+        Quantidade: {{produto.quantidade}}<hr/>
+        <button (click)="excluir(produto.id)">Excluir</button></div>
+    </div>
+</main>
+<app-lateral pagina="Listagem de Produtos"></app-lateral>

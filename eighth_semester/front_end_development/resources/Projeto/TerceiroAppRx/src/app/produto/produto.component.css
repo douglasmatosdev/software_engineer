@@ -1,0 +1,21 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+#conteudo{
+    display:flex;
+    flex-wrap: wrap;
+    width:80%;
+    float:left;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+	display: flex; flex-direction: row; flex-wrap: wrap;
+    width: 100%; overflow-y: scroll; height:230px;
+}
+
+.pnlProduto{
+	width:200px; height:85px; background-color: lightyellow;
+	border: black solid 1px; text-align: center;
+	margin: 5px; padding: 10px; 
+}

@@ -1,0 +1,27 @@
+<main id="conteudo">
+    <div style="width:100%; margin:10px;">
+        <h2 style="display:inline;">Acesso Autenticado</h2>
+        <hr />
+        <div id="mensagem" *ngIf="mensagem != ''">
+        {{mensagem}}
+        </div>
+        <div class="pnlInterno">
+        <form (submit)="signin()">
+            <mat-form-field appearance="fill">
+                <mat-label>Login</mat-label>
+                <input matInput name="login" type="text" [(ngModel)]="login">
+            </mat-form-field><br/>
+            <mat-form-field appearance="fill">
+                <mat-label>Senha</mat-label>
+                <input matInput name="senha" type="password" [(ngModel)]="senha">
+            </mat-form-field><br/>
+            <button mat-raised-button color="primary" type="submit" [disabled]="enviando">Login</button>
+        </form>
+        </div>
+        <div class="pnlInterno" style="margin-top:10%">
+            <p>Não é cadastrado?</p> 
+            <button mat-button color="primary" (click)="showCadUsu()">Clique aqui!</button>
+        </div>
+    </div>
+</main>
+<app-lateral pagina="Tela de Login"></app-lateral>

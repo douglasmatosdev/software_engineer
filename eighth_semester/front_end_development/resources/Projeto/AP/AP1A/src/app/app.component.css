@@ -1,0 +1,11 @@
+.container{
+    display: flex; justify-content: center;
+}
+#pnlInfo{
+    text-align: center;
+    width: 500px; background: black;
+}
+.info{
+    color: white; font-weight: bold;
+    display: block; font-size: 26px;
+}

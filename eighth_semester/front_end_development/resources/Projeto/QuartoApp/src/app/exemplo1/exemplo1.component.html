@@ -1,0 +1,17 @@
+<div>
+    <form (submit)="adicionar()" style="display: inline-block;">
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" [(ngModel)]="novaPessoa.cpf"><br/>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" [(ngModel)]="novaPessoa.nome"><br/>
+      <label for="idade">Idade:</label>
+      <input type="number" name="idade" [(ngModel)]="novaPessoa.idade"><br/>
+      <button type="submit">Incluir</button>
+    </form>
+    <app-list-pessoa style="margin: 20px; vertical-align: top;"></app-list-pessoa>
+    <app-tab-pessoa></app-tab-pessoa>
+    <p>
+      <app-panel-pessoa>Último adicionado: </app-panel-pessoa>
+    </p>
+    <div id="el"></div>
+  </div>

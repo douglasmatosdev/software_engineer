@@ -1,0 +1,11 @@
+*{font-family: Arial, Helvetica, sans-serif;}
+
+#rodape{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border: black dashed;
+    height: 15px;
+}

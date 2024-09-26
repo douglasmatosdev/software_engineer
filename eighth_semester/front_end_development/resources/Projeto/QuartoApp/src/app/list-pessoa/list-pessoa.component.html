@@ -1,0 +1,6 @@
+<select *ngIf="pessoas.length>0" multiple 
+    style="display:inline-block; width:200px; color:red">
+    <option *ngFor="let pessoa of pessoas">
+        {{pessoa.nome}}
+    </option>
+</select>

@@ -1,0 +1,23 @@
+<header id="cabecalho">
+<div id="topo">  
+<img width="70" height="70" src="/assets/angular.png"/>
+<h1 style="display: inline;">{{title}}</h1>
+<img *ngIf="!servLogin.isAuthenticated" id="login" width="50" height="50" 
+     src="/assets/login.png"/>
+<div *ngIf="servLogin.isAuthenticated" id="descUsu">
+  <span style="font-weight: bold;display: block;">Usuário Logado:</span>
+  {{servLogin.usuarioLogado.nome}}<br/>
+  {{servLogin.usuarioLogado.email}}
+</div>
+<img *ngIf="servLogin.isAuthenticated" id="logged" width="50" height="50" 
+     src="/assets/login.png" (click)="signout()"
+     title="Logout"/>
+
+</div>
+<nav id="menu">
+  <a routerLink="/home">Home</a>
+  <a routerLink="/produto">Produtos</a>
+</nav>
+</header>
+<router-outlet></router-outlet>
+<app-rodape></app-rodape>

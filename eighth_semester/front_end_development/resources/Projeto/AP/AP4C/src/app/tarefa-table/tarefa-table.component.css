@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+}
+td,th {
+    border-left: 1px solid black; padding: 5px;
+}
+.oper{
+    text-align: center;
+}
+th {
+    font-weight: bold;
+}
+tr:nth-child(even) {
+    background: lightgray
+}
+button {
+    background: red; color: white;
+}
