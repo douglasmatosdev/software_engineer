@@ -1,0 +1,8 @@
+<header id="cabecalho">
+  <nav id="menu">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/produto">Produto</a>
+    <button (click)="logout()" *ngIf="isLogado()">Logout</button>
+  </nav>
+</header>
+<router-outlet></router-outlet>
