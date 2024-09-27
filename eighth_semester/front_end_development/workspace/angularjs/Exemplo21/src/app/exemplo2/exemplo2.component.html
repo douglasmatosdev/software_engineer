@@ -1,0 +1,7 @@
+<aside>
+    <table [width]="'100%'">
+        <tr *ngFor="let cr of cores">
+            <td *ngFor="let cor of cr" [style.background]="'#'+cor.toString(16)">&nbsp;</td>
+        </tr>
+    </table>
+</aside>
